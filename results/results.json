@@ -1,0 +1,369 @@
+{
+  "config": {
+    "n_layer": 2,
+    "n_head": 2,
+    "n_embd": 128,
+    "block_size": 128,
+    "batch_size": 64,
+    "lr": 0.0003,
+    "pretrain_steps": 2500,
+    "adapt_steps": 800,
+    "vocab_size": 97,
+    "total_params": 438016
+  },
+  "pretrain": {
+    "val_loss_a": 1.9074,
+    "history": [
+      {
+        "step": 0,
+        "train_loss": 4.743086814880371,
+        "val_loss": 4.743832588195801
+      },
+      {
+        "step": 250,
+        "train_loss": 2.5459206104278564,
+        "val_loss": 2.539618730545044
+      },
+      {
+        "step": 500,
+        "train_loss": 2.4341118335723877,
+        "val_loss": 2.451406717300415
+      },
+      {
+        "step": 750,
+        "train_loss": 2.299837350845337,
+        "val_loss": 2.321112871170044
+      },
+      {
+        "step": 1000,
+        "train_loss": 2.139760971069336,
+        "val_loss": 2.169543743133545
+      },
+      {
+        "step": 1250,
+        "train_loss": 2.05299711227417,
+        "val_loss": 2.097057819366455
+      },
+      {
+        "step": 1500,
+        "train_loss": 1.9913383722305298,
+        "val_loss": 2.0538368225097656
+      },
+      {
+        "step": 1750,
+        "train_loss": 1.9269888401031494,
+        "val_loss": 2.005255937576294
+      },
+      {
+        "step": 2000,
+        "train_loss": 1.8629038333892822,
+        "val_loss": 1.969308614730835
+      },
+      {
+        "step": 2250,
+        "train_loss": 1.8275787830352783,
+        "val_loss": 1.9386123418807983
+      },
+      {
+        "step": 2500,
+        "train_loss": 1.7749052047729492,
+        "val_loss": 1.9113094806671143
+      }
+    ],
+    "wall_seconds": 427.5,
+    "sample": "ROMEO:\nI net as theemy the hen be offors\nAs then he award, what of look hear hear'd well thou\nLir, be see the at all the siers? a cautious,\nOr sire mestere morrent to ale made as the be in up spenselvower;\nAnd is brother have sto one as my lars the mon,\nAnd fore this fold up morrowd 'Dains thought,\nBut th"
+  },
+  "methods": [
+    {
+      "method": "full",
+      "trainable_params": 438016,
+      "total_params": 438016,
+      "trainable_pct": 100.0,
+      "history": [
+        {
+          "step": 0,
+          "train_loss": 3.5057590007781982,
+          "val_loss": 3.504775285720825
+        },
+        {
+          "step": 100,
+          "train_loss": 2.078199625015259,
+          "val_loss": 2.081390619277954
+        },
+        {
+          "step": 200,
+          "train_loss": 1.9623199701309204,
+          "val_loss": 1.9716880321502686
+        },
+        {
+          "step": 300,
+          "train_loss": 1.9133180379867554,
+          "val_loss": 1.9084551334381104
+        },
+        {
+          "step": 400,
+          "train_loss": 1.8576574325561523,
+          "val_loss": 1.8705294132232666
+        },
+        {
+          "step": 500,
+          "train_loss": 1.8282299041748047,
+          "val_loss": 1.8339790105819702
+        },
+        {
+          "step": 600,
+          "train_loss": 1.8000303506851196,
+          "val_loss": 1.8074413537979126
+        },
+        {
+          "step": 700,
+          "train_loss": 1.7783368825912476,
+          "val_loss": 1.7761081457138062
+        },
+        {
+          "step": 800,
+          "train_loss": 1.7476272583007812,
+          "val_loss": 1.7586761713027954
+        }
+      ],
+      "val_loss_b_final": 1.7567,
+      "val_loss_a_after_adapt": 3.5686,
+      "val_loss_a_adapter_off": null,
+      "wall_seconds": 177.8,
+      "sample": "En un lugar de la Mancharreza.\n\n\n\u2014 A puestro\n\u2014 Sancho de los pentos que escualenci\u00f3n suera que sin pros porque volveciones las impo en ojar decega on acarladr\u00e1 haya vecho, pero\u00f1a de los he ser paderon volitaba de se nuego diste atra, con don Quijote de Pros que pues, a consa del muchosto prestaba darleco apondo por como, p"
+    },
+    {
+      "method": "lora1",
+      "trainable_params": 1536,
+      "total_params": 439552,
+      "trainable_pct": 0.3494,
+      "history": [
+        {
+          "step": 0,
+          "train_loss": 3.502552032470703,
+          "val_loss": 3.512068510055542
+        },
+        {
+          "step": 100,
+          "train_loss": 3.375722885131836,
+          "val_loss": 3.379267930984497
+        },
+        {
+          "step": 200,
+          "train_loss": 3.03367018699646,
+          "val_loss": 3.057387590408325
+        },
+        {
+          "step": 300,
+          "train_loss": 2.8128013610839844,
+          "val_loss": 2.8465893268585205
+        },
+        {
+          "step": 400,
+          "train_loss": 2.69189715385437,
+          "val_loss": 2.72072172164917
+        },
+        {
+          "step": 500,
+          "train_loss": 2.622990846633911,
+          "val_loss": 2.642305374145508
+        },
+        {
+          "step": 600,
+          "train_loss": 2.5924105644226074,
+          "val_loss": 2.5946884155273438
+        },
+        {
+          "step": 700,
+          "train_loss": 2.5524837970733643,
+          "val_loss": 2.5661849975585938
+        },
+        {
+          "step": 800,
+          "train_loss": 2.5303609371185303,
+          "val_loss": 2.5422110557556152
+        }
+      ],
+      "val_loss_b_final": 2.549,
+      "val_loss_a_after_adapt": 2.5163,
+      "val_loss_a_adapter_off": 1.906,
+      "wall_seconds": 161.2,
+      "sample": "En un lugar de la Manchas wure no, so, que; calemannta m y, mededone redos andes poln Porer,\nla ge de! son do sao Jlledateter n ru so lo me, a to terisuas ne ma qua\npo toodesen: o didelcaiesicometon tho del comansu dairtede, is;o, vematedas  donse somesto on quo purto ou eseader toldo era, me :\n\nEalade que To-s to rit thal"
+    },
+    {
+      "method": "lora4",
+      "trainable_params": 6144,
+      "total_params": 444160,
+      "trainable_pct": 1.3833,
+      "history": [
+        {
+          "step": 0,
+          "train_loss": 3.5068366527557373,
+          "val_loss": 3.513256788253784
+        },
+        {
+          "step": 100,
+          "train_loss": 3.085026979446411,
+          "val_loss": 3.1093854904174805
+        },
+        {
+          "step": 200,
+          "train_loss": 2.7031655311584473,
+          "val_loss": 2.7284860610961914
+        },
+        {
+          "step": 300,
+          "train_loss": 2.551053762435913,
+          "val_loss": 2.571066379547119
+        },
+        {
+          "step": 400,
+          "train_loss": 2.50003719329834,
+          "val_loss": 2.521721363067627
+        },
+        {
+          "step": 500,
+          "train_loss": 2.4644980430603027,
+          "val_loss": 2.4773144721984863
+        },
+        {
+          "step": 600,
+          "train_loss": 2.424246072769165,
+          "val_loss": 2.437711000442505
+        },
+        {
+          "step": 700,
+          "train_loss": 2.3966753482818604,
+          "val_loss": 2.420036554336548
+        },
+        {
+          "step": 800,
+          "train_loss": 2.384150266647339,
+          "val_loss": 2.400475025177002
+        }
+      ],
+      "val_loss_b_final": 2.3996,
+      "val_loss_a_after_adapt": 2.7474,
+      "val_loss_a_adapter_off": 1.9142,
+      "wall_seconds": 177.1,
+      "sample": "En un lugar de la Manchanca,\nPiras ledel. Ro coron udab\u00e9ote von so Grino pendescias, no-re da no ever pera que terasura focha\nTo mu, der le te quen cato se tho, ro se po su hi\u00efgada que e en sal ngado cas ple co, des que wero mo el, pes corceso destragande en laua y, werpe morito bur\u00fcus illamas pe---\nna tey.\n\nMo Mo \u00e1lo a de"
+    },
+    {
+      "method": "lora16",
+      "trainable_params": 24576,
+      "total_params": 462592,
+      "trainable_pct": 5.3127,
+      "history": [
+        {
+          "step": 0,
+          "train_loss": 3.504826307296753,
+          "val_loss": 3.515280246734619
+        },
+        {
+          "step": 100,
+          "train_loss": 2.7466790676116943,
+          "val_loss": 2.776608943939209
+        },
+        {
+          "step": 200,
+          "train_loss": 2.50876522064209,
+          "val_loss": 2.5177245140075684
+        },
+        {
+          "step": 300,
+          "train_loss": 2.418628215789795,
+          "val_loss": 2.444735050201416
+        },
+        {
+          "step": 400,
+          "train_loss": 2.36230731010437,
+          "val_loss": 2.371654510498047
+        },
+        {
+          "step": 500,
+          "train_loss": 2.3255951404571533,
+          "val_loss": 2.3479151725769043
+        },
+        {
+          "step": 600,
+          "train_loss": 2.310396671295166,
+          "val_loss": 2.317126512527466
+        },
+        {
+          "step": 700,
+          "train_loss": 2.2842674255371094,
+          "val_loss": 2.3091635704040527
+        },
+        {
+          "step": 800,
+          "train_loss": 2.280229091644287,
+          "val_loss": 2.2892775535583496
+        }
+      ],
+      "val_loss_b_final": 2.2862,
+      "val_loss_a_after_adapt": 2.8979,
+      "val_loss_a_adapter_off": 1.9094,
+      "wall_seconds": 175.4,
+      "sample": "En un lugar de la Manchad\u2014wara a pa quen a von cancefor ha,\ngel hendo des denel tir. Lo que temos ma la per\na que que enditiingo y a.\n\nLuto que po querantra quedas mo, comos morin pre wercar mas parande con des pasta fan vite hanes, me se su,\nha no han intrabran; y ses no spue lichandegla do el seria de come qua ga\ncoue qu"
+    },
+    {
+      "method": "head",
+      "trainable_params": 12416,
+      "total_params": 438016,
+      "trainable_pct": 2.8346,
+      "history": [
+        {
+          "step": 0,
+          "train_loss": 3.5039031505584717,
+          "val_loss": 3.5063483715057373
+        },
+        {
+          "step": 100,
+          "train_loss": 2.7925190925598145,
+          "val_loss": 2.8101532459259033
+        },
+        {
+          "step": 200,
+          "train_loss": 2.53253173828125,
+          "val_loss": 2.5339558124542236
+        },
+        {
+          "step": 300,
+          "train_loss": 2.391277313232422,
+          "val_loss": 2.4061970710754395
+        },
+        {
+          "step": 400,
+          "train_loss": 2.325493574142456,
+          "val_loss": 2.339717388153076
+        },
+        {
+          "step": 500,
+          "train_loss": 2.2805466651916504,
+          "val_loss": 2.300809383392334
+        },
+        {
+          "step": 600,
+          "train_loss": 2.264509677886963,
+          "val_loss": 2.2670280933380127
+        },
+        {
+          "step": 700,
+          "train_loss": 2.243335247039795,
+          "val_loss": 2.254096269607544
+        },
+        {
+          "step": 800,
+          "train_loss": 2.2274105548858643,
+          "val_loss": 2.242563247680664
+        }
+      ],
+      "val_loss_b_final": 2.2377,
+      "val_loss_a_after_adapt": 2.6867,
+      "val_loss_a_adapter_off": null,
+      "wall_seconds": 98.8,
+      "sample": "En un lugar de la Manchas se\u00f1ong.\nYarese, duntrastard\u00f3 no flesade dijiin a las rasto que diposais der se\u00f1orn pue vu es lo do poso to maza cul en ce la cus qua la,\na, ha halsosto hay a subios pantide ci hicia dibadi\u00f3artada sita a gun\n\n\u2014e cue, a de pue cosparega poncracar,a s, yourtrota can an es despa vura cui lasomi\u00e9  ento"
+    }
+  ],
+  "total_wall_seconds": 1253.2
+}
